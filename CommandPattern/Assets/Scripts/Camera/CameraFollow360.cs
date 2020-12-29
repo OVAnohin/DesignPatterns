@@ -11,7 +11,6 @@ public class CameraFollow360 : MonoBehaviour
     [SerializeField] private Vector3 _lookOffset = new Vector3(0, 1, 0);
     [SerializeField] private float _cameraSpeed = 10;
     [SerializeField] private float _rotationSpeed = 10;
-    [SerializeField] private float _delay = 0.1f; // из за него работает плавно!!!!
 
     void FixedUpdate()
     {
@@ -19,10 +18,9 @@ public class CameraFollow360 : MonoBehaviour
         Vector3 relativePosition = lookPosition - transform.position;
         Quaternion rotation = Quaternion.LookRotation(relativePosition);
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * _rotationSpeed * _delay);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * _rotationSpeed);
 
-        Vector3 targetPos = _target.transform.position + _target.transform.up * _height - _target.transform.forward * _distance;
-
-        transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * _cameraSpeed * _delay);
+        Vector3 targetPos = _target.position + _target.up * _height - _target.forward * _distance;
+        transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * _cameraSpeed);
     }
 }

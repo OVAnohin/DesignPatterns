@@ -166,7 +166,7 @@ PrefabInstance:
     - target: {fileID: 896643537356868711, guid: fa22a6f5df9b6428b9970f9e66c62c1b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 896643537356868711, guid: fa22a6f5df9b6428b9970f9e66c62c1b,
         type: 3}
@@ -271,7 +271,7 @@ PrefabInstance:
     - target: {fileID: 6626711202248471951, guid: 4ea1cc2a0893345dc8f80482fdf62b1d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6626711202248471951, guid: 4ea1cc2a0893345dc8f80482fdf62b1d,
         type: 3}
@@ -474,7 +474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &2022210235
 GameObject:
@@ -576,6 +576,5 @@ MonoBehaviour:
   _distance: 5
   _height: 2.5
   _lookOffset: {x: 0, y: 1, z: 0}
-  _cameraSpeed: 100
-  _rotationSpeed: 100
-  _delay: 0.1
+  _cameraSpeed: 2
+  _rotationSpeed: 2
