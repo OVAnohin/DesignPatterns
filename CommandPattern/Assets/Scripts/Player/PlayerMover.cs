@@ -22,12 +22,12 @@ public class PlayerMover : MonoBehaviour
 
         Move(translation, rotation);
 
-        if (Input.GetKeyDown(KeyCode.Space))
-            _animator.SetTrigger("isJumping");
-        else if (Input.GetKeyDown(KeyCode.P))
-            _animator.SetTrigger("isPunching");
-        else if (Input.GetKeyDown(KeyCode.K))
-            _animator.SetTrigger("isKicking");
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //    _animator.SetTrigger("isJumping");
+        //else if (Input.GetKeyDown(KeyCode.P))
+        //    _animator.SetTrigger("isPunching");
+        //else if (Input.GetKeyDown(KeyCode.K))
+        //    _animator.SetTrigger("isKicking");
 
     }
 
