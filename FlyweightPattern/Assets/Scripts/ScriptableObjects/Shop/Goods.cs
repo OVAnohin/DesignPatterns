@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // мы создаем где будет храниться объект, пункт меню, order = 51 это что бы пункт был ниже File
+// по умолчанию у меню было 50
 //[CreateAssetMenu(fileName = "New Goods", menuName = "Goods/Create New Goods", order = 51)]
 public abstract class Goods : ScriptableObject
 {
