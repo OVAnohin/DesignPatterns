@@ -6,6 +6,9 @@ public class Asteroid : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.TryGetComponent<Ship>(out Ship ship))
+            ship.TakeDamage();
+
         gameObject.SetActive(false);
     }
 }
