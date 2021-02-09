@@ -20,9 +20,9 @@ public class @InputActions : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""d69d7077-c933-4b6d-bf7e-74d4ce22dde1"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -48,7 +48,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""2D Vector"",
+                    ""name"": ""AD Keys"",
                     ""id"": ""a80e5f4e-f22d-4aed-8425-9c7c9d7a0a35"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
@@ -81,7 +81,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""2D Vector"",
+                    ""name"": ""LF Arrow Keys"",
                     ""id"": ""40701ba3-d4b4-45d5-aaf5-35a57658d109"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
